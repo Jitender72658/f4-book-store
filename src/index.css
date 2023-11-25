@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+.navbarContainer{
+    background-color: #292828;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+.storeDetailContainer{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.searchContainer{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.searchContainer input{
+   width: 25vw;
+   padding-left: 35px;
+   height: 30px;
+   font-size: 16px;
+   outline: none;
+   background-color: #373737;
+   border: none;
+   color: white;
+   border-radius: 5px;
+}
+
+.searchContainer img{
+   position: relative;
+   left: 49px;
+}
+.searchContainer button{
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: #373737;
+    border: none;
+    color: white;
+}
+
+.profileContainer{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 35px;
+}
+.profileContainer img{
+    width: 20px;
+}
