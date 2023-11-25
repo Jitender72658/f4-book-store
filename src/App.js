@@ -7,8 +7,8 @@ function App() {
    const [searchInput, setSearchInput] = useState("harry+porter");
   return (
     <div className="App">
-          <Navbar setSearchInput={setSearchInput}></Navbar>
-          <Books searchInput={searchInput}></Books>
+          <Navbar setSearchInput={setSearchInput}/>
+          <Books searchInput={searchInput} setSelectedBook={setSelectedBook}/>
     </div>
   );
 }

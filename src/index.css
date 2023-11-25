@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
+  color: white;
 }
 .navbarContainer{
     background-color: #292828;
@@ -55,4 +56,17 @@ body {
 }
 .profileContainer img{
     width: 20px;
+}
+.booksContainer{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.bookContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    background-color: aquamarine;
+    
 }
