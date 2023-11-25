@@ -9,13 +9,15 @@ const SelectedBookDisplay = (param) => {
             <div>
                 <img src={selectedBook.volumeInfo.imageLinks.thumbnail} alt="Book cover" />
             </div>
-            <div>
-                 <div>
-                    <h3>{selectedBook.volumeInfo.title}</h3>
+            <div className='rightHalfBookDetailsContainer'>
+                 <div className='bookHeadingDiv'>
+                    <h2>{selectedBook.volumeInfo.title}</h2>
                     <p>Publish Date: {selectedBook.volumeInfo.publishedDate}</p>
                  </div>
-                <p>{selectedBook.volumeInfo.description}</p>
-                <div>
+                 <div className='descriptionContainer'>
+                         <p><b>Description: </b>{selectedBook.volumeInfo.description}</p>
+                 </div>
+                <div className='selectedBookDetailsDiv'>
                      <p>Rating Count: {selectedBook.volumeInfo.ratingsCount}</p>
                      <p>Avg. Rating: {selectedBook.volumeInfo.averageRating}</p>
                      <p>Publisher: {selectedBook.volumeInfo.authors}</p>
