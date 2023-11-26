@@ -20,7 +20,7 @@ const SelectedBookDisplay = (param) => {
                 <div className='selectedBookDetailsDiv'>
                      <p>Rating Count: {selectedBook.volumeInfo.ratingsCount}</p>
                      <p>Avg. Rating: {selectedBook.volumeInfo.averageRating}</p>
-                     <p>Publisher: {selectedBook.volumeInfo.authors}</p>
+                     <p>Publisher: {selectedBook.volumeInfo.authors.join(", ")}</p>
                      <p>Language: {selectedBook.volumeInfo.language.toUpperCase()}</p>
                 </div>
                 <div>
