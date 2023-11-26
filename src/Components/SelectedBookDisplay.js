@@ -3,15 +3,19 @@ import axios from 'axios';
 
 const SelectedBookDisplay = (param) => {
     let selectedBook = param.selectedBook;
-    if(!selectedBook.volumeInfo.averageRating){
+    console.log(selectedBook);
+    if(selectedBook.volumeInfo && !selectedBook.volumeInfo.averageRating){
         selectedBook.volumeInfo.averageRating= Math.ceil(Math.random()*9);
     }
-    if(!selectedBook.volumeInfo.ratingsCount){
+    if(selectedBook.volumeInfo && !selectedBook.volumeInfo.ratingsCount){
         selectedBook.volumeInfo.ratingsCount = Math.ceil(Math.random()*39);
+    }
+    if(selectedBook.volumeInfo && !selectedBook.volumeInfo.authors){
+        selectedBook.volumeInfo.authors =[];
     }
    
   return (
-         selectedBook && <div  className='selectedBookItem'>
+         selectedBook.volumeInfo && <div  className='selectedBookItem'>
             <div>
                 <img src={selectedBook.volumeInfo.imageLinks.thumbnail} alt="Book cover" />
             </div>
