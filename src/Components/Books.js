@@ -24,7 +24,6 @@ return (
     <div className='booksContainer'>
     {displayBooks.length > 0 && displayBooks.map((value, index) => (
             value.volumeInfo && value.volumeInfo.imageLinks && value.volumeInfo.imageLinks.thumbnail &&
-            value.volumeInfo.averageRating && value.volumeInfo.ratingsCount &&
               <div key={index} className='bookCoverContainer'>
                       <button onClick={()=>updateSelectedBook(value)}> <img  src={value.volumeInfo.imageLinks.thumbnail} alt="image" /></button>             
               </div>

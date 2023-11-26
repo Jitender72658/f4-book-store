@@ -3,6 +3,12 @@ import axios from 'axios';
 
 const SelectedBookDisplay = (param) => {
     let selectedBook = param.selectedBook;
+    if(!selectedBook.volumeInfo.averageRating){
+        selectedBook.volumeInfo.averageRating= Math.ceil(Math.random()*9);
+    }
+    if(!selectedBook.volumeInfo.ratingsCount){
+        selectedBook.volumeInfo.ratingsCount = Math.ceil(Math.random()*39);
+    }
    
   return (
          selectedBook && <div  className='selectedBookItem'>
